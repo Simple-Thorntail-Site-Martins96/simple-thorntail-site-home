@@ -1,13 +1,43 @@
 .toolbar {
-  padding: 0 1%;
-  margin: -8px -8px 0 -8px;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  background-color: #1976d2;
-  color: white;
-  font-weight: 600;
+	padding: 0 1%;
+	margin: -8px -8px 0 -8px;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	background-color: #1976d2;
+	color: white;
+	font-weight: 600;
+}
+
+.logout-btn {
+	width: 60px;
+	height: 25px;
+	position: relative;
+	background: #00aeff;
+	border-radius: 10px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+}
+
+.logout-btn span {
+	color: white; font-family : "Montserrat", sans-serif;
+	font-weight: semibold;
+	font-family: "Montserrat", sans-serif;
+}
+
+.logout-btn:hover {
+	opacity: 0.9;
+	box-shadow: -1px -1px 2px #101010, 1px 1px 2px
+		#000000;
+}
+
+.logout-btn:active {
+	opacity: 1;
+	box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px
+		16px rgba(0, 0, 0, 0.1);
+	color: #79e3b6;
 }

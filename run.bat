@@ -1,5 +1,5 @@
 @echo off
-@echo *** Stating Home module ***
+@echo *** Starting Home module ***
 @echo ** Starting Backend **
 cd home
 start "BACKEND Console" mvn clean thorntail:run -DskipTests
