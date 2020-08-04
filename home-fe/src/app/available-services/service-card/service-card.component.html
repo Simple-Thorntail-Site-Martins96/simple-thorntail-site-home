@@ -1,0 +1,11 @@
+<div class="card-itm">
+    <div class="card-itm-labels">
+        <label>Service Name:</label><span>{{ service.name }}</span>
+    </div>
+    <div class="card-itm-labels">
+        <label>Info:</label><span>{{ service.displayInfo }}</span>
+    </div>
+    <div class="card-itm-labels" *ngIf="isUrlAvailable()">
+        <label>URL:</label><span><a href="{{ service.url }}">Link</a></span>
+    </div>
+</div>

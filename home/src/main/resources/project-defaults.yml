@@ -16,7 +16,7 @@ thorntail:
     periodic-rotating-file-handlers:
       FILE:
         file:
-          path: log/MY_APP_NAME.log
+          path: log/home.log
         suffix: .yyyy-MM-dd
         named-formatter: LOG_FORMATTER
         level: WARN
@@ -26,7 +26,7 @@ thorntail:
   security:
     security-domains:
       # name matches realm name used with LoginConfig
-      home-realm:
+      simplesite-realm:
         jaspi-authentication:
           login-module-stacks:
             roles-lm-stack:

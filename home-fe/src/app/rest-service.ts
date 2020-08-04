@@ -18,8 +18,8 @@ export class RestService {
 		});
 	}
 
-	sendGet(url: string, headers: HttpHeaders): Observable<HttpResponse<any>> {
-		return this.http.get(url, {
+	sendGet<T>(url: string, headers: HttpHeaders): Observable<HttpResponse<T>> {
+		return this.http.get<T>(url, {
 			headers,
 			observe: 'response'
 		});

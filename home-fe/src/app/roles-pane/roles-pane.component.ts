@@ -32,15 +32,15 @@ export class RolesPaneComponent implements OnInit {
 			'Accept': 'application/json',
 			'Authorization': ('Bearer ' + this.jwt)
 		});
-		this.sub = this.rest.sendGet(rolesUrl, headers)
+		this.sub = this.rest.sendGet<any>(rolesUrl, headers)
 		.subscribe(resp => {
-			console.log(resp.body);
 			this.roles = resp.body.roles;
 		}, error => {
 			if (error.status === 401) {
 				console.error('Not authorized. ', error);
 				window.location.href = loginUrl;
 			} else {
+				console.error("Generic Error");
 				console.error(error);
 			}
 		})

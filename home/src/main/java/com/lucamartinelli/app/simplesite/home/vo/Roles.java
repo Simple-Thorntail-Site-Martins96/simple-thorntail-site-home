@@ -1,4 +1,4 @@
-package com.lucamartinelli.app.simplesite.vo;
+package com.lucamartinelli.app.simplesite.home.vo;
 
 import java.util.Arrays;
 import java.util.Set;

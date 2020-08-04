@@ -1,0 +1,19 @@
+.card-itm {
+    margin: 10px 20px;
+    display: block;
+}
+.card-itm-labels {
+    display: flex;
+    margin-top: 1em;
+}
+.card-itm-labels label {
+    font-weight: 550;
+    width: 30%;
+    align-self: baseline;
+}
+
+.card-itm-labels span {
+    font-weight: 350;
+    width: 69%;
+    align-self: auto;
+}

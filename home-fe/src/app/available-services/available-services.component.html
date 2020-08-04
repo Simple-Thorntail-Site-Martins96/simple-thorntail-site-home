@@ -1,0 +1,9 @@
+<h1>Your service:</h1>
+
+<div *ngFor="let svc of services" class="card">
+		<span class="divisor"> </span>
+		<app-service-card [service]="svc"></app-service-card>
+</div>
+<div class="card">
+	<span class="divisor"> </span>
+</div>

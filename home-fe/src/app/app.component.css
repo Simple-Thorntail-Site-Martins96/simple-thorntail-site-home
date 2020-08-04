@@ -1,7 +1,9 @@
 .center-single {
-	margin-left: auto;
-	margin-right: auto;
 	width: 100%;
 	max-width: 600px;
 	text-align: center;
+}
+
+.same-line {
+	display: flex;
 }

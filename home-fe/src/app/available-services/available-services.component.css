@@ -1,0 +1,7 @@
+.card span.divisor {
+    height: 3px;
+    width: 100%;
+    background-image: linear-gradient(to right, transparent, lightgray, darkgray, gray, darkgray, lightgray, transparent);
+    display: block;
+    clear: both;
+}

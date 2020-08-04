@@ -6,13 +6,17 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { RolesPaneComponent } from './roles-pane/roles-pane.component';
 import { NamePaneComponent } from './name-pane/name-pane.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AvailableServicesComponent } from './available-services/available-services.component';
+import { ServiceCardComponent } from './available-services/service-card/service-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     RolesPaneComponent,
-    NamePaneComponent
+    NamePaneComponent,
+    AvailableServicesComponent,
+    ServiceCardComponent
   ],
   imports: [
     BrowserModule,
