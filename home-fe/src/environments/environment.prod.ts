@@ -3,4 +3,5 @@ export const environment = {
 };
 
 
-export const host = 'your-prod-url';
+export const host = 'home-simple-site.apps-crc.testing';
+export const loginUrl = "http://login-fe-simple-site.apps-crc.testing"

@@ -6,6 +6,7 @@ import java.util.logging.Logger;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
+import javax.inject.Inject;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
@@ -21,6 +22,7 @@ public class ServicesEJB {
 	
 	private final Logger log;
 	
+	@Inject
 	@ConfigProperty(name = "services.discovery.endpoint")
 	private String serviceDiscoveryEndpoint;
 	

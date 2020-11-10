@@ -16,7 +16,7 @@ thorntail:
     periodic-rotating-file-handlers:
       FILE:
         file:
-          path: log/home.log
+          path: log/service-discovery.log
         suffix: .yyyy-MM-dd
         named-formatter: LOG_FORMATTER
         level: WARN
@@ -41,3 +41,11 @@ thorntail:
               module: org.wildfly.extension.undertow
               flag: required
               login-module-stack-ref: roles-lm-stack
+---
+project:
+  stage: openshift
+thorntail:
+  network:
+    socket-binding-groups:
+      standard-sockets:
+        port-offset: 0

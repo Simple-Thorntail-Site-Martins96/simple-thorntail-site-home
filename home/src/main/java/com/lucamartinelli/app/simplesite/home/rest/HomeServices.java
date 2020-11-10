@@ -25,7 +25,7 @@ public class HomeServices {
 	@Inject
 	private JsonWebToken callerPrincipal;
 	
-	@EJB
+	//@EJB
 	private ServicesEJB servicesEJB;
 	
 	@GET

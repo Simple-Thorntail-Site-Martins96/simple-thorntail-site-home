@@ -1,0 +1,12 @@
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - env:
+        - name: THORNTAIL_PROJECT_STAGE
+          value: openshift
+        - name: JAVA_APP_DIR
+          value: /deployments
+        - name: JAVA_OPTIONS
+          value: -Dservices.discovery.endpoint=http://$(SERVICE_DISCOVERY_SERVICE_HOST):$(SERVICE_DISCOVERY_SERVICE_PORT)/api/services/discovery

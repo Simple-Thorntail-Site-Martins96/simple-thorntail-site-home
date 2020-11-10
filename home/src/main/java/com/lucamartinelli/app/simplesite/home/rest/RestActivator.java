@@ -6,7 +6,7 @@ import javax.ws.rs.core.Application;
 
 import org.eclipse.microprofile.auth.LoginConfig;
 
-@ApplicationPath("/api")
+@ApplicationPath("")
 @LoginConfig(authMethod = "MP-JWT", realmName = "simplesite-realm")
 @DeclareRoles({"dev", "test"})
 public class RestActivator extends Application {
