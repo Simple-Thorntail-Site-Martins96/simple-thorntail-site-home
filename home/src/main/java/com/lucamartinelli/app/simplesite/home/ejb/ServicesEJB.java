@@ -14,7 +14,8 @@ import javax.ws.rs.core.MediaType;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-import com.lucamartinelli.app.simplesite.home.vo.ServiceVO;
+import com.lucamartinelli.app.simplesite.commons.home.vo.ServiceVO;
+
 
 @LocalBean
 @Stateless

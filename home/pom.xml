@@ -24,6 +24,7 @@
 	</properties>
 
 
+
 	<build>
 		<finalName>home</finalName>
 		<plugins>
@@ -118,6 +119,15 @@
 			<groupId>io.thorntail</groupId>
 			<artifactId>logging</artifactId>
 		</dependency>
+		
+		<!-- Required internal module Commons-Iterfaces -->
+		<!-- github url TODO -->
+		<dependency>
+		    <groupId>com.lucamartinelli.app.simplesite</groupId>
+		    <artifactId>Commons-Interfaces</artifactId>
+		    <version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 
 	</dependencies>
 </project>
